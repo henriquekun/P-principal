@@ -1,0 +1,38 @@
+.navbar{
+	margin-bottom: 0;
+	background: #C72327;
+	> .container{
+		> .row{
+			> .nav{
+				padding-left: 0 !important;
+	@include make-md-column(12);
+	.navbar{
+		border-radius: 0;
+		border: none;
+		background: #C72327;
+		margin-bottom: 0;
+		.navbar-collapse{
+			padding-left: 0;
+			> ul.navbar-nav{
+				>li{
+					&.active{
+						a{
+                            background: #820000;
+						}
+					}
+					a{
+                       color: #fff;
+                      font: bold 16px $font_main;
+                      &:hover{
+                      	background: #820000;
+                      }
+					}
+					}
+				}
+			}
+		}
+
+	}
+		}
+}
+	}

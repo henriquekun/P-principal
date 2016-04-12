@@ -1,0 +1,87 @@
+#servicos{
+	> #servicos_itens{
+		@include make-row();
+		> .servicos_item{
+			@include make-xs-column(12);
+			@include make-sm-column(6);
+			@include make-md-column(3);
+
+			cursor: pointer;
+
+			height: 150px;
+			background-color: #ccc;
+			background-clip: content-box;
+			margin-bottom: 30px;
+			
+			> a{
+				display: block;
+				height: 150px;
+				text-align: center;
+				span.title{
+					font: 30px $font-main;
+					color: #fff;
+					position: absolute;
+					width: 100%;
+					display: none;
+					bottom: 25px;
+					padding-left: 10px;
+					padding-right: 40px;
+				}
+				&:hover > span.title{
+					display: block;
+				}
+				&:hover > span.icon{
+				top: 15px !important;
+				transition: top 0.5s linear;
+
+					&.camera{
+						@include sprite-define(70px, 52px, -5px, -67px);
+
+					}
+					&.config{
+						@include sprite-define(70px, 70px, -5px, -209px);
+					}
+					&.banner{
+						@include sprite-define(70px, 66px, -5px, -449px);
+					}
+					&.pc{
+						@include sprite-define(70px, 62px, -5px, -681px);
+					}
+
+				}
+				> span.icon{
+					display: inline-block;
+					@extend .sprite-servicos;
+					position: relative;
+
+					&.camera{
+						@include sprite-define(70px, 52px, -5px, -5px);
+						top: (150px-50px)/2;
+
+					}
+					&.config{
+						@include sprite-define(70px, 70px, -5px, -129px);
+						top: (150px-70)/2;
+					}
+					&.banner{
+						@include sprite-define(70px, 66px, -5px, -373px);
+						top: (150px-66)/2;
+					}
+					&.pc{
+						@include sprite-define(70px, 62px, -5px, -609px);
+						top: (150px-62)/2;
+					}
+				}
+			}
+			
+
+			&:hover{
+				background-color: $site_color;
+
+			}
+			&, &:hover{
+				transition: all 0.5s linear;
+			}
+		}
+	}
+}

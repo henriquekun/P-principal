@@ -1,0 +1,29 @@
+a{
+	outline: none;
+	img{
+		border: none;
+	}
+}
+.container{
+	padding-left: 0;
+	.row{
+		>span{
+			float: left;
+			display: inline-block;
+			height: 30px;
+			width: 10px;
+			background: $site_color;
+		}
+		h2.heading{
+			padding-bottom: 4px;
+			margin: 5px 0 30px 6px;
+			float: left;
+			font: bold 18px $font_main;
+			color: $heading_color;
+		}
+	}
+}
+.sprite-servicos{
+	background-image: url('../imagens/spritesheet.png');
+	background-repeat: no-repeat;
+}

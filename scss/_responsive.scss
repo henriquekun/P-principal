@@ -1,0 +1,31 @@
+@media screen and (max-width: 768px){
+	body{
+		header{
+			> .row{
+				> .logo-container{
+
+					> .container-logo{
+                        margin-left: 15%;
+                        margin-right: 15%;
+                        width: 70%;
+					}
+				}
+			}
+		}
+		.nav{
+			margin-left: 2%
+		}
+		.container{
+			> .row{
+				> span{
+					margin-left: 15%;
+				}
+			}
+			> #servicos_itens{
+				> .servicos_item{
+					margin-left: 2%;
+				}
+			}
+		}
+	}
+}
