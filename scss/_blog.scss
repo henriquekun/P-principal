@@ -1,0 +1,67 @@
+#blog_itens{
+	> .row{
+		@include make-row(12);
+		#posts{
+			@include make-xs-column(12);
+			@include make-sm-column(8);
+			@include make-md-column(9);
+		> .post{
+			display: block;
+			p{
+				font: 14px bold 300 $font_main;
+				 text-align: left;
+			}
+			> a{
+				text-decoration: none;
+				display: block;
+				padding: 9px 14px;
+				background: $site_color;
+				font: 16px bold $font_main;
+				color: #fff;
+				border-radius: 20px;
+				width: 138px;
+				float: right;
+				margin-bottom: 30px;
+				border: 2px solid;
+				&:hover{
+					background: $hover_color;
+					transition: all 0.2s linear;
+					
+				}
+			}
+		}
+		}
+		> .sidebar{
+			> img{
+				
+			}
+			float: left;
+			@include make-xs-column(12);
+			@include make-sm-column(4);
+			@include make-md-column(3);
+			> .titulo{
+				
+				>h2{
+					float: left;
+					margin: 0;
+					padding-left: 5px;
+					font: 16px bold $font_main;
+					color: #464646;
+					margin: 15px 0 15px;
+				}
+					
+				>span{
+					float: left;
+					height: 30px;
+					width: 5px;
+					background: $site_color;
+					display: inline-block;
+					margin: 15px 0 15px;
+				}
+
+			}
+		}
+	}
+}
+
+
